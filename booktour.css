@@ -1,0 +1,137 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color:transparent;
+    color: #333;
+    line-height: 1.4;
+    background: url('https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg') no-repeat center center/cover;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 0.8rem 1.2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.6rem;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-links li {
+    margin-left: 1rem;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+    color: #e74c3c;
+}
+
+/* Form Section */
+.tour-request-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color:transparent;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tour-request-form h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+input, textarea {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input[type="date"] {
+    font-size: 0.9rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    padding: 0.8rem;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .nav-links {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    header .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .tour-request-form {
+        padding: 1rem;
+    }
+}
